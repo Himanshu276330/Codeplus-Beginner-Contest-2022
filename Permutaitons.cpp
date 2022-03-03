@@ -14,7 +14,7 @@ void solve(int a,int n,vector<int> &arr,vector<bool> &vis){
 	}else{
 		for(int i=1;i<=n;i++){
 			if(!vis[i]){
-				arr[a]=i;[i]=a;
+				arr[a]=i;arr[i]=a;
 				vis[a]=1;vis[i]=1;
 
 				solve(a+1,n,arr,vis);
